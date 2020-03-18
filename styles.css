@@ -20,7 +20,6 @@ body{
     height:10vh;
     position:fixed;
     top:0;
-   
     padding:0 12%;
     font-family: 'Ubuntu', sans-serif;
     display:flex;
@@ -801,4 +800,102 @@ body{
     border:2px solid white;
     cursor: pointer;
     
+}
+
+/*************************//*************** MEDIA QUERY ******************************/
+@media only screen and (max-width:1020px){
+    .hero-slide-headline{
+        font-size:12rem;
+        margin:1rem;
+    }
+    .about-me-quotation{
+        font-size:3rem;
+    }
+}
+
+@media only screen and (max-width:830px){
+    .hero-slide-headline{
+        font-size:10rem;
+        margin:1rem;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .hero-slide-headline{
+        font-size:7rem;
+        margin:1rem;
+    }
+    .about-me-quotation{
+        font-size:2rem;
+    }
+
+    
+    .portfolio-container{
+        height:150vh;
+    }
+    .portfolio-cards-container{
+        flex-direction:column;
+        height:80%;
+    }
+    .about-container{
+        height:360vh;
+    }
+    .about-hero-container{
+        flex-direction:column;
+        height:180vh;
+    }
+    .about-hero-bg{
+        width:100%;
+    }
+    .about-me-quote-container{
+        width:100%;
+    }
+    .about-qualification-container{
+        height:180vh;
+
+    }
+    .qualification-cards{
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        width:50%;
+        height:900px;
+    }
+
+    .qualification-card{
+        height:30%;
+        width:100%;
+        margin-top:1rem;
+
+}
+
+@media only screen and (max-width:500px){
+    .hero-slide-headline{
+        font-size:5rem;
+        margin:1rem;
+    }
+}
+
+@media only screen and (max-width:414px){
+ 
+    .qualification-cards{
+
+        width:80%;
+       
+    }
+    .header ul li a{
+        font-weight:400;
+        font-size:1rem;
+        line-height:2rem;
+    }
+    .contact-us-btn{
+        padding:1rem 0;
+        font-size:1rem;
+        line-height:2rem;
+     
+    }
+    .header{
+        position:fixed;
+        top:0;
+        padding:0 6%;
 }
