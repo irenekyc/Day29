@@ -7,12 +7,16 @@
 a{
     text-decoration:none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-size:12px;
 
     width:100vw;
     overflow-x:hidden;
+    
 }
 
 .header{
@@ -286,6 +290,12 @@ body{
     width:90vw;
     height:350px;
     display:flex;
+    opacity:0;
+    transition: 3s;
+}
+
+.is-reveal{
+    opacity:1;
 }
 
 .portfolio-card{
@@ -430,6 +440,26 @@ body{
     margin-top:1rem;
 }
 
+.title-to-be-revealed{
+    transform: translateX(-100px);
+    opacity:0;
+    transition:2s;
+}
+
+.title-to-be-revealed:nth-child(2){
+    transition-delay: 0.5s;
+
+}
+.title-to-be-revealed:nth-child(3){
+    transition-delay: 1s;
+    
+}
+
+.fadeFromLeft {
+    transform: translateX(0);
+    opacity:1;
+}
+
 .about-me-quote-container {
     width:40%;
     height:100%;
@@ -439,6 +469,16 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.quote-to-be-revealed{
+    transform: translateX(200px);
+    opacity:0;
+    transition:2s;
+}
+.fadeFromRight{
+    transform: translateX(0);
+    opacity:1;
 }
 .about-me-quote-container i {
     font-size:3rem;
@@ -558,7 +598,22 @@ body{
     padding-left:1rem;
     text-align:left;
     box-shadow: 5px 5px 10px rgba(15, 76, 129,0.2);
-   
+    opacity:0;
+    transform: translateY(50px);
+    transition:2s;
+}
+
+.card-reveal {
+    opacity:1;
+    transform: translateY(0);
+}
+
+.qualification-card:nth-child(2){
+    transition-delay: 0.5s;
+}
+
+.qualification-card:nth-child(3){
+    transition-delay: 1s;
 }
 
 .q-card-title{
